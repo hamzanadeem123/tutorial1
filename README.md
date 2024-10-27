@@ -1,6 +1,3 @@
-# tutorial1
-Basic Git Commands
-
 Here’s a step-by-step hands-on Git tutorial to help you get familiar with Git commands and basic workflows. Follow along by executing these commands in your terminal.
 
 ### 1. **Setup Git**
@@ -124,6 +121,8 @@ You can check the differences between commits using `git diff`. Before staging t
 
 ```bash
 git diff
+
+git diff
 ```
 
 If no changes are detected, try modifying the file again and rerun the command.
@@ -133,7 +132,13 @@ If no changes are detected, try modifying the file again and rerun the command.
 Branches allow you to work on different features without affecting the main codebase:
 
 ```bash
-git branch feature-branch
+git branch feature-branch 
+```
+
+To delete a locally created branch (The -D option is an alias for --delete --force, which deletes the branch "irrespective of its merged status.):
+
+```bash
+git branch -d feature-branch
 ```
 
 Switch to the new branch:
